@@ -1,0 +1,27 @@
+<html>
+<script>
+  function myFunction() {
+    var y = parseInt(document.getElementById("txt1").value);
+    var z = parseInt(document.getElementById("txt2").value);
+    var x = y + z;
+        if ((document.getElementById("txt1").value  == 1) || (document.getElementById("txt2").value  == 2))
+          {
+                  alert('First Number Value must not equal to "1" OR Second Number Value must not equal to "2"');
+          }
+    document.getElementById("result").innerHTML = x;
+  }
+</script>
+
+<p>
+  <label>Enter First Number : </label><br>
+  <input type="number" id="txt1" name="text1"><br/>
+  <label>Enter Second Number : </label><br>
+  <input type="number" id="txt2" name="text2">
+</p>
+
+<p>
+  <button onclick="myFunction()">Calculate</button>
+</p>
+
+
+<p id="result"></p>
